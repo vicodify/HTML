@@ -75,8 +75,18 @@
                 <option>select your option</option> <!-- ye by default aata hai likha hua. choose to niche wale se krna hai-->
                 <option value="student">Student</option>
                 <option value="dev">Developer</option>
+                <!--agar option pre selected chahiye to selected attribute use krte hain-->
+                <!-- example: <option value="dev" selected >developer</option>-->
             </select>
         </div>
+
+        <label for="vol" >Select your volume level :</label>
+        <input type="range" id="vol" min="0" max="100" name="vol">
+
+        <label for="age" >Select your age :</label>
+        <input type="range" id="age" min="0" max="100" name="age" step="10">
+        <!-- step use krne se value utne hi step badhti hai. jaise yaha 10 hai to ab 10, 20, 30 aise badhegi-->
+         <!-- by default agar hum chahte hai ki koi value select hoke aaye to hum value attribute ka use karenge-->
         <button>Submit</button> 
     </form>
 </body>
